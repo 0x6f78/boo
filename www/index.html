@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boo ♥</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Particles Background -->
+    <div id="particles-js2"></div>
+
+    <!-- Your Content -->
+    <img src="milkie_boo.png" alt="Centered Image">
+
+    <!-- Load particles.js securely -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Only run if the target div exists
+      function initParticles() {
+        if (typeof particlesJS === "undefined" || !document.getElementById("particles-js2")) {
+          return setTimeout(initParticles, 100);
+        }
+
+        particlesJS("particles-js2", {
+          "particles": {
+            "number": { "value": 150, "density": { "enable": true, "value_area": 1500 } },
+            "color": { "value": "#ff1578" },
+            "shape": {
+              "type": "circle",
+              "stroke": { "width": 0, "color": "#ffffff" },
+              "polygon": { "nb_sides": 5 },
+              "image": {
+                "src": "https://cdn.discordapp.com/attachments/1275849583494430742/1437039351510077590/I_love_milk_-_VRC_Emoji.png",
+                "width": 500,
+                "height": 500
+              }
+            },
+            "opacity": {
+              "value": 1,
+              "random": false,
+              "anim": { "enable": true, "speed": 2.5, "opacity_min": 0, "sync": false }
+            },
+            "size": {
+              "value": 5,
+              "random": true,
+              "anim": { "enable": true, "speed": 4, "size_min": 0.5, "sync": false }
+            },
+            "line_linked": { "enable": false },
+            "move": {
+              "enable": true,
+              "speed": 2,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": { "enable": true, "mode": "bubble" },
+              "onclick": { "enable": true, "mode": "repulse" },
+              "resize": true
+            },
+            "modes": {
+              "bubble": { "distance": 250, "size": 0, "duration": 2, "opacity": 0, "speed": 3 },
+              "repulse": { "distance": 400, "duration": 0.4 }
+            }
+          },
+          "retina_detect": true
+        });
+      }
+
+      initParticles();
+    });
+    </script>
+
+</body>
+</html>
