@@ -40,6 +40,17 @@ img {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
+  cursor: pointer; 
+}
+
+#boo-div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 9999;
+    cursor: pointer; 
 }
 
 #particles-js2 {
@@ -83,4 +94,7 @@ body[data-page-specific-id="91zwAqYoGL"] #particles-js2 {
     0% { transform: scale(1); }
     50% { transform: scale(0.9); }
     100% { transform: scale(1); }
+}
+.hidden {
+  display: none !important;
 }
